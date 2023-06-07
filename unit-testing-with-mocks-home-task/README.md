@@ -13,6 +13,11 @@ or
 
 ```
 yarn install
+
+or
+npm install 
+
+
 ```
 
 # USAGE
@@ -20,7 +25,7 @@ yarn install
 In order to use the UserDataHandler class you need to have the server running.
 To do so you need to execute the following command in a separate terminal:
 ```
-npm run server-start
+npm run start-server
 
 # RUN UNIT TESTS
 

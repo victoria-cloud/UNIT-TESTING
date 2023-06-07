@@ -4,12 +4,34 @@
         "es2020": true,
         "node": true
     },
-    "extends": [
-        "standard"
-    ],
     "parserOptions": {
         "ecmaVersion": 11
     },
+    "plugins": [
+        "mocha"
+    ],
+    "settings": {
+        "mocha/additionalCustomNames": [
+            {
+                "name": "describeModule",
+                "type": "suite",
+                "interfaces": [
+                    "BDD"
+                ]
+            },
+            {
+                "name": "testModule",
+                "type": "testCase",
+                "interfaces": [
+                    "TDD"
+                ]
+            }
+        ]
+    },
     "rules": {
+        "no-multiple-empty-lines": "warn",
+        "no-var": "error",
+        "mocha/no-skipped-tests": "error",
+        "mocha/no-exclusive-tests": "error"
     }
 }
