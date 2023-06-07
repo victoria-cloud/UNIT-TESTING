@@ -61,8 +61,8 @@ class UserDataHandler {
   isMatchingAllSearchParams (user, searchParamsObject) {
     let isMatching = true
     for (const searchParam in searchParamsObject) {
-      console.log(user[searchParam])
-      console.log(searchParamsObject[searchParam])
+      // console.log(user[searchParam])
+      // console.log(searchParamsObject[searchParam])
       if (user[searchParam] !== searchParamsObject[searchParam]) {
         isMatching = false
       }
