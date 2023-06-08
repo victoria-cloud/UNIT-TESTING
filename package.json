@@ -14,11 +14,6 @@
         "lint-staged": "npm run eslint"
     },
     "pre-commit": "lint-staged",
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm lint-staged"
-        }
-    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/stranger2626/unit-testing-with-mocks-home-task.git"
