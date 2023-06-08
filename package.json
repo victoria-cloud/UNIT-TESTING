@@ -11,15 +11,12 @@
         "start-server": "node ./src/server/server.js",
         "eslint": "eslint ./",
         "prepare": "husky install",
-        "lint-staged": "lint-staged"
-    },
-    "lint-staged": {
-        "*.js": "eslint"
+        "lint-staged": "eslint"
     },
     "pre-commit": "lint-staged",
     "husky": {
         "hooks": {
-            "pre-commit": "lint-staged"
+            "pre-commit": "npm lint-staged"
         }
     },
     "repository": {
