@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const UserDataHandler = require('../unit-testing-with-mocks-home-task/src/data_handlers/user_data_handler')
+const UserDataHandler = require('../src/data_handlers/user_data_handler')
 
 const userDataHandler = new UserDataHandler()
 
