@@ -48,7 +48,7 @@ describe('Test UserDataHandler class methods:', () =>{
   // })
 
   it('<getNumberOfUsers> method should retrieve number of current users', () => {
-    const numberOfUsers = userDataHandler.getNumberOfUsers()
+    const numberOfUsers=userDataHandler.getNumberOfUsers()
     expect(numberOfUsers).to.be.a('number')
     expect(numberOfUsers).to.equal(10)
   })
