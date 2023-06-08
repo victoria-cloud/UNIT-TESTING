@@ -2,7 +2,3 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npm test
-npm eslint
-npm run eslint
-npm eslint
-npm test
