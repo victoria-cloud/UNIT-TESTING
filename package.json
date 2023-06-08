@@ -10,8 +10,13 @@
         "cover:report": "nyc report --reporter=lcov --reporter=text",
         "start-server": "node ./src/server/server.js",
         "eslint": "eslint ./",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "lint-staged": "lint-staged"
     },
+    "lint-staged": {
+        "*.js": "eslint"
+    },
+    "pre-commit": "lint-staged",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/stranger2626/unit-testing-with-mocks-home-task.git"
@@ -36,12 +41,8 @@
         "eslint-plugin-promise": "^4.2.1",
         "eslint-plugin-standard": "^4.0.1",
         "husky": "^8.0.3",
+        "lint-staged": "^13.2.2",
         "mocha": "^8.4.0",
         "nyc": "^15.1.0"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run eslint"
-        }
     }
 }
