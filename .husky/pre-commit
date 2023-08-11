@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
-
+# remove run unit tests from pre-commit hook
 npm run eslint #&& npm test
