@@ -38,4 +38,6 @@ npm run start-server
 # CREATE HTML REPORT
 
   npm run cover:report
+
+# JENKINS  
 ```
