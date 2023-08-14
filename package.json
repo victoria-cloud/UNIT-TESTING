@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "type": "module",
-        "test": "mocha --timeout 10000",
+        "test-mocha": "mocha --timeout 10000",
         "coverage": "nyc npm run test-mocha",
         "cover:report": "nyc report --reporter=lcov --reporter=text",
         "start-server": "node ./src/server/server.js",
